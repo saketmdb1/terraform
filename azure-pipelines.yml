@@ -4,7 +4,7 @@ trigger:
       - main  # or 'master' depending on your repo
 
 pool:
-  name: 'SelftHostedPool'
+  name: 'Default'
 
 steps:
 - checkout: self
