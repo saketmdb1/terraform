@@ -9,9 +9,9 @@ pool:
 steps:
 - checkout: self
 
-- task: Bash@3
+- task: PowerShell@2
   inputs:
     targetType: 'inline'
     script: |
-      echo "Running pipeline..."
-      cat yourfile.txt  # change to the file you want to import/process
+      Write-Host "Running pipeline..."
+      Get-Content yourfile.txt  # Replace with your actual file
